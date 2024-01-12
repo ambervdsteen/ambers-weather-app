@@ -1,9 +1,14 @@
 body {
   background-color: pink;
+  font-family: "Afacad", serif;
 }
 
 .complete-app {
   background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+
   max-width: 700px;
   margin: 0 auto;
+  padding: 55px;
 }
