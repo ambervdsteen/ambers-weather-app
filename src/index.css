@@ -1,0 +1,9 @@
+body {
+  background-color: pink;
+}
+
+.complete-app {
+  background-color: white;
+  max-width: 700px;
+  margin: 0 auto;
+}
