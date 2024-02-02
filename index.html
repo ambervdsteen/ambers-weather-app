@@ -18,24 +18,30 @@
         <form class="search-form-weather">
           <input
             type="search"
-            placeholder="look for the weather in your city"
+            placeholder="Look for the weather in your city"
             class="search-form-input"
           />
           <input type="submit" name="search" class="search-form-submit" />
         </form>
       </header>
       <main>
-        <div>
-          <p>Today in</p>
-          <h1>BARCELONA</h1>
-          <br />
-          <p>
-            17°C / 13 °C <br />
-            humidity 54% winds of 18 km/h
-          </p>
+        <div class="weather-app-data-content">
+          <div>
+            <p class="today-in-city">Today in</p>
+            <h1 class="weather-current-city">BARCELONA</h1>
+            <br />
+            <p class="weather-current-details">
+              <span class="weather-current-temp">17°C / 13 °C </span> <br />
+              humidity <span class="weather-current-temp">54% </span>winds of
+              <span class="weather-current-temp">18 km/h</span>
+            </p>
+          </div>
+          <div class="weather-app-details-container">
+            <div class="weather-app-emoji">🌞</div>
+            <div class="weather-app-temperature-value">17</div>
+            <div class="weather-app-celsius">°C</div>
+          </div>
         </div>
-        <div><strong>17°C</strong></div>
-        <div>🌞</div>
       </main>
       <footer>
         Coded by
