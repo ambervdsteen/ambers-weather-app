@@ -7,7 +7,7 @@ function updateWeather(response) {
   let windSpeedCurrent = document.querySelector("#wind-speed");
   let currentTime = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
-  let minimumMaximum = document.querySelector("#minimum-maximum");
+  let iconWeather = document.querySelector("#icon");
 
   updatedTempElement.innerHTML = Math.round(temperature);
   cityElement.innerHTML = response.data.city;
@@ -15,7 +15,7 @@ function updateWeather(response) {
   humidityCurrent.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedCurrent.innerHTML = `${response.data.wind.speed} KM/H`;
   currentTime.innerHTML = formatDate(date);
-  minimumMaximum.innerHTML = `${response.data.daily.temperature.minimum}/${response.data.daily.temperature.maximum}`;
+  iconWeather.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-emoji"/>`;
 }
 
 function formatDate(date) {
