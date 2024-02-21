@@ -23,4 +23,4 @@ let searchFormElement = document.querySelector("#search-form-weather");
 
 searchFormElement.addEventListener("submit", actSearchSubmit);
 
-searchCity("Amsterdam");
+submitCity("Amsterdam");
