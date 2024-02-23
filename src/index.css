@@ -85,6 +85,10 @@ a {
   justify-content: space-between;
 }
 
+.forecast-day {
+  display: block;
+}
+
 .weather-forecast-day-of-week {
   font-size: 18px;
   margin-top: 20px;
@@ -92,8 +96,8 @@ a {
 }
 
 .forecast-icon {
+  display: block;
   font-size: 40px;
-  text-align: center;
 }
 .weather-forecast-temp {
   display: flex;

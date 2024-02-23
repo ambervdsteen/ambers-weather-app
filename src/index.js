@@ -66,6 +66,7 @@ function displayWeeklyForecast() {
     forecastHtml =
       forecastHtml +
       `
+      <div class="forecast-day"> 
               <div class="weather-forecast-day-of-week">${day}</div>
               <div class="forecast-icon">
                 <img
@@ -78,8 +79,7 @@ function displayWeeklyForecast() {
                 <span class="forecast-temp-max">18°</span>
                 <span class="forecast-temp-min">12°</span>
               </div>
-            </div>
-          </div>`;
+            </div>`;
   });
 
   let forecast = document.querySelector("#forecast");
