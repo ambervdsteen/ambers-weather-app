@@ -16,6 +16,8 @@ function updateWeather(response) {
   windSpeedCurrent.innerHTML = `${response.data.wind.speed} KM/H`;
   currentTime.innerHTML = formatDate(date);
   iconWeather.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-emoji"/>`;
+
+  retreiveForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -58,7 +60,13 @@ searchFormElement.addEventListener("submit", actSearchSubmit);
 
 submitCity("Amsterdam");
 
-function displayWeeklyForecast() {
+function retreiveForecast(city) {
+  let apiKey = "2950072abb4303db56f019dto24c1aca";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeeklyForecast);
+}
+
+function displayWeeklyForecast(response) {
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
   let forecastHtml = "";
 
