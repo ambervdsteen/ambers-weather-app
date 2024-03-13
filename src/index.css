@@ -1,11 +1,11 @@
 body {
-  background-color: pink;
+  background-color: #ffb0e7;
   display: block;
   font-family: "Afacad", serif;
   margin: 65px;
 }
 a {
-  color: darkmagenta;
+  color: #7f08be;
 }
 .complete-app {
   background-color: white;
@@ -18,7 +18,7 @@ a {
 }
 
 .search-form-input {
-  background-color: pink;
+  background-color: #ffb0e7;
   border: none;
   border-radius: 8px;
 
@@ -28,7 +28,7 @@ a {
   width: 80%;
 }
 .search-form-submit {
-  background-color: darkmagenta;
+  background-color: #499200;
   border: none;
   border-radius: 8px;
   color: white;
@@ -56,7 +56,7 @@ a {
   line-height: 25px;
 }
 .weather-current-temp {
-  color: green;
+  color: #499200;
 }
 
 .weather-app-details-container {
